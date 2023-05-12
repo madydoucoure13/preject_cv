@@ -1,0 +1,63 @@
+#phumb{
+    position: relative;
+    height: 210px;
+}
+
+#phumb {grid-area: phumb;}
+#name {grid-area: name;}
+#profile {grid-area: profile;}
+#contacts {grid-area: contacts;}
+#formation {grid-area: formation;}
+#comptences {grid-area: comptences;}
+#objectifs {grid-area: objectifs;} 
+#langues {grid-area: langues;} 
+#experiences {grid-area: experiences;} 
+#blank {grid-area: blank;} 
+
+.container-grid{
+    display: grid;
+     /*grid-auto-columns: 210px 370px;*/ 
+    grid-auto-columns: 40% 60%;
+    grid-template-areas:   'phumb name'
+                            'profile formation'
+                            'profile experiences'
+                            'contacts experiences'
+                            'langues experiences'
+                            'langues comptences'
+                            'langues objectifs' 
+}
+
+
+
+/* 'phumb phumb name name name name'
+'phumb phumb formation formation formation formation'
+'profile profile formation formation formation formation'
+'contacts contacts formation formation formation formation'
+'contacts contacts experiences experiences experiences experiences'
+'langues langues comptences comptences comptences comptences'
+'langues langues objectifs objectifs objectifs objectifs'; */
+.section{
+    padding: 10px 20px;
+}
+@media only screen and (max-width: 500px) {
+    .container-grid{
+        display: grid;
+        grid:       "phumb"
+            "name"
+            "profile"
+            "contacts"
+            "formation"
+            "comptences"
+            "experiences"
+            "objectifs"
+            "langues"
+            "blank"
+            "footer"
+    }
+    .header h1,.header h4{
+        text-align: center;
+    }
+    .rect-parent .child {
+        width: 80%;
+    }
+  }
