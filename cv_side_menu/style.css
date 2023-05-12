@@ -45,6 +45,7 @@ label{
 .p-absolute{
     position: absolute;
     left:40px;
+    z-index: 200;
 }
 header label.p-absolute{
     /*display: none;*/
