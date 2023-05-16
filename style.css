@@ -75,7 +75,11 @@ header{
     position: relative;
 }
 label{
+    display: block;
     cursor: pointer;
+    text-align: right;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 
