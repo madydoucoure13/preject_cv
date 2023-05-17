@@ -40,7 +40,6 @@ body{
     content: '\263E'; 
     /* 263E */
     font-size: 40px;
-    border: 1px solid #000;
     margin-bottom: 2px;
 }
 
@@ -74,6 +73,7 @@ inpu{
 header{
     position: relative;
 }
+
 label{
     display: block;
     cursor: pointer;
@@ -81,10 +81,13 @@ label{
     min-width: 40px;
     min-height: 40px;
 }
-
-
-
-
+.mode-label{
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+}
 .p-absolute{
     position: absolute;
 }
